@@ -7,7 +7,7 @@ class Config:
         self.db_name = os.getenv("DB_NAME", "db")
         self.db_host = os.getenv("DB_HOST", "localhost")
         self.db_port = os.getenv("DB_PORT", "5432")
-        self.bot_token = os.getenv("BOT_TOKEN")
+        self.bot_token = os.getenv("BOT_TOKEN", "")
         self.env = os.getenv("ENV", "dev")
 
         self._validate()
